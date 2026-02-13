@@ -19,12 +19,20 @@ void main() {
           backgroundColor:
               Colors.blueGrey[900],
         ),
-        body: Center(
-          child: Image(
-            image: AssetImage(
-              'assets/diamante.jpg',
+        body: Column(
+          children: [
+            Center(
+              child: Image(
+                image: NetworkImage(
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                ),
+              ),
             ),
-          ),
+            Image.asset(
+              'assets/teste.jpg',
+            ),
+
+          ],
         ),
       ),
     ),
